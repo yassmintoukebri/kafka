@@ -12,7 +12,6 @@ public class UserController {
 
     @Autowired
     private InterfaceGeneric<User> userServiceImplementation;
-    // hello
 
 
     @PostMapping
