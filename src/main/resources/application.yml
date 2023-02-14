@@ -1,0 +1,26 @@
+spring:
+  kafka:
+    producer:
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      bootstrap-servers: 127.0.0.1:9092
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test
+  main:
+    allow-bean-definition-overriding: true
+auto:
+  create:
+    topics:
+      enable: 'true'
+order:
+  topic:
+    name: order-topic
+server:
+  port: '9090'
+
+
+
